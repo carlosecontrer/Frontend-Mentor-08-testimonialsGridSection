@@ -1,0 +1,12 @@
+
+//- mixin card(title, content)
+//-     article.card
+//-         +card("image-daniel", "Daniel Clifford", "Verified Graduete")
+//-         h2.card__title= title
+//-         blockquote.card__content= content 
+
+mixin card(title, content)
+    article.card
+    block
+    h2.card__title= title  
+    blockquote.card__content= content
