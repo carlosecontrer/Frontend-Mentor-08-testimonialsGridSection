@@ -8,11 +8,14 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible" content="IE=edge")
         meta(name="viewport" content="width=device-width, initial-scale=1.0")
         link(rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/x-icon")
+        link(rel='preconnect' href='https://fonts.gstatic.com')
+        link(href='https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap' rel='stylesheet')
+        link(rel="stylesheet" href="./css/style.css")
         title Frontend Mentor | [Testimonials Grid Section]
     body
 
         each cardInfo in cardsInfo
-            +card(cardInfo.title,cardInfo.content)
+            +card(cardInfo.title,cardInfo.content,cardInfo.classModifier)
                 +user(cardInfo.header.userImageUrl,cardInfo.header.userName,cardInfo.header.userState)
 
 

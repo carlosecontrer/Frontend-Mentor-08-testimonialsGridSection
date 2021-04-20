@@ -1,0 +1,35 @@
+@use '../config/variables' as *;
+.card {
+  background-color: $white;
+  color: $veryDarkGrayishBlue;
+  padding: 2rem;
+  margin-bottom: 2rem;
+
+  border-radius: .75rem;
+  &__header {
+    margin-bottom: 2rem;
+  }
+  &__title {
+    font-size: 1.5rem;
+  }
+  &__content {
+    opacity: 70%;
+    font-weight: 500;
+    
+  }
+  &--is-violet {
+    background-color: $moderateViolet;
+    color: $white;
+  }
+  //   &--has-backgroundQuote {
+
+  //   }
+  &--is-veryDarkGrayishBlue {
+    background-color: $veryDarkGrayishBlue;
+    color: $white;
+  }
+  &--is-veryDarkBlackishBlue {
+    background-color: $veryDarkBlackishBlue;
+    color: $white;
+  }
+}

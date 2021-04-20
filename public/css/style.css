@@ -1,0 +1,58 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+body {
+  background-color: #ecf2f8;
+  padding: 1rem;
+}
+
+body, blockquote, h2, h3, p {
+  margin: 0;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+.user__left {
+  margin-right: 1.5rem;
+}
+.user__state {
+  opacity: 50%;
+}
+
+.card {
+  background-color: white;
+  color: #48556a;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 0.75rem;
+}
+.card__header {
+  margin-bottom: 2rem;
+}
+.card__title {
+  font-size: 1.5rem;
+}
+.card__content {
+  opacity: 70%;
+  font-weight: 500;
+}
+.card--is-violet {
+  background-color: #7541c8;
+  color: white;
+}
+.card--is-veryDarkGrayishBlue {
+  background-color: #48556a;
+  color: white;
+}
+.card--is-veryDarkBlackishBlue {
+  background-color: #19212e;
+  color: white;
+}
