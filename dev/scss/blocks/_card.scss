@@ -2,28 +2,44 @@
 .card {
   background-color: $white;
   color: $veryDarkGrayishBlue;
-  padding: 2rem;
+
+  padding: 1.5rem 2rem 1.5rem 2rem;
   margin-bottom: 2rem;
 
-  border-radius: .75rem;
+  border-radius: 0.75rem;
   &__header {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
   }
   &__title {
-    font-size: 1.5rem;
+    font-size: 1.255rem;
+    margin-bottom: 1.5rem;
+    z-index:999;
+    
   }
   &__content {
     opacity: 70%;
     font-weight: 500;
-    
+    font-size: 13px;
   }
   &--is-violet {
     background-color: $moderateViolet;
     color: $white;
   }
-  //   &--has-backgroundQuote {
-
-  //   }
+  &--has-backgroundQuote {
+    position: relative;
+   
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: 0;
+      top: 0;
+      right: 1.5rem;
+      width: 6.25rem;
+      height: 6.25rem;
+      background-image: url(../assets/images/bg-pattern-quotation.svg);
+      //background-color: red;
+    }
+  }
   &--is-veryDarkGrayishBlue {
     background-color: $veryDarkGrayishBlue;
     color: $white;
