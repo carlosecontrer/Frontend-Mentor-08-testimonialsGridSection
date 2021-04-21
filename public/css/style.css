@@ -2,19 +2,32 @@ html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
   font-family: "Barlow Semi Condensed", sans-serif;
 }
 
 body {
   background-color: #ecf2f8;
-  padding: 1.5rem;
+  padding: 4rem 1.5rem;
   font-size: 0.8125rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-body, blockquote, h2, h3, p {
+body,
+blockquote,
+h2,
+h3,
+p {
   margin: 0;
+}
+
+main {
+  display: grid;
 }
 
 .user {
@@ -24,11 +37,6 @@ body, blockquote, h2, h3, p {
 .user__left {
   margin-right: 1rem;
 }
-.user__left img {
-  width: 2rem;
-  height: 2rem;
-  border-radius: 50%;
-}
 .user__name {
   font-size: 0.75rem;
   font-weight: 500;
@@ -37,6 +45,15 @@ body, blockquote, h2, h3, p {
   opacity: 50%;
   font-size: 0.75rem;
   font-weight: 500;
+}
+.user__img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: 2px solid #ecf2f8;
+}
+.user__img--border-is-violet {
+  border-color: #9771dd;
 }
 
 .card {
@@ -64,17 +81,9 @@ body, blockquote, h2, h3, p {
   color: white;
 }
 .card--has-backgroundQuote {
-  position: relative;
-}
-.card--has-backgroundQuote::after {
-  content: "";
-  position: absolute;
-  z-index: 0;
-  top: 0;
-  right: 1.5rem;
-  width: 6.25rem;
-  height: 6.25rem;
   background-image: url(../assets/images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: 90% 1%;
 }
 .card--is-veryDarkGrayishBlue {
   background-color: #48556a;

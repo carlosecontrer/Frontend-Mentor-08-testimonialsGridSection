@@ -24,20 +24,31 @@
 @use '../config/variables' as *;
 
 html {
-    box-sizing: border-box;
-  }
-  *, *:before, *:after {
-    box-sizing: inherit;
-    font-family: $primary-font;
-  }
-
-body {
-  
-  background-color: $lightGrayishBlue;
-  padding: 1.5rem;
-  font-size: 0.8125rem;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  font-family: $primary-font;
 }
 
-body, blockquote,h2,h3,p{
-    margin: 0;
+body {
+  background-color: $lightGrayishBlue;
+  padding: 4rem 1.5rem;
+  font-size: 0.8125rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body,
+blockquote,
+h2,
+h3,
+p {
+  margin: 0;
+}
+main {
+  display: grid;
 }

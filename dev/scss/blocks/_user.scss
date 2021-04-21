@@ -1,21 +1,27 @@
-.user{
-    display: flex;
-    align-items: center;
-    &__left{
-        margin-right: 1rem;
-        img{
-            width: 2rem;
-            height: 2rem;
-            border-radius: 50%;
-        }
+@use '../config/variables' as *;
+.user {
+  display: flex;
+  align-items: center;
+  &__left {
+    margin-right: 1rem;
+    
+  }
+  &__name {
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+  &__state {
+    opacity: 50%;
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+  &__img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 2px solid $lightGrayishBlue;
+    &--border-is-violet{
+      border-color: rgb(151, 113, 221);
     }
-    &__name{
-        font-size: .75rem;
-        font-weight: 500;
-    }
-    &__state{
-        opacity:50%;
-        font-size: .75rem;
-        font-weight: 500;
-    }
+  }
 }
