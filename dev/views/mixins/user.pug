@@ -1,7 +1,7 @@
-mixin user(userImageUrl, userName, userState, userImageModifier, extension=".jpg")
+mixin user(userImageUrl, userName, userState, extension=".jpg")
     header.card__header.user
         .user__left
-           img(src=`../public/assets/images/image-${userImageUrl}${extension}`, alt=`${userName} Profile Picture` class=userImageModifier)
+           img( class=`user__img img__${userImageUrl}` src=`../public/assets/images/image-${userImageUrl}${extension}`, alt=`${userName} Profile Picture` )
         .user__right 
             h3.user__name= userName 
             p.user__state= userState

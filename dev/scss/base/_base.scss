@@ -40,6 +40,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100vh;
 }
 
 body,
@@ -51,4 +52,25 @@ p {
 }
 main {
   display: grid;
+}
+
+@media screen and(min-width:768px) {
+  main {
+    width: 540px;
+  }
+}
+
+@media screen and(min-width:1280px) {
+  main {
+    min-width: 1200px;
+    max-width: 1440;
+    min-height: 720px;
+    gap: 2rem;
+    
+    grid-template-areas:
+      "daniel daniel  jonathan kira"
+      "jeanette patrick patrick kira";
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 1fr)
+  }
 }

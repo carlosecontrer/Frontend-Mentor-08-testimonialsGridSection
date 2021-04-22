@@ -5,6 +5,7 @@
   padding: 1.5rem 2rem 1.5rem 2rem;
   margin-bottom: 2rem;
   border-radius: 0.75rem;
+  box-shadow: 5px 5px 5px 10px rbga($veryDarkBlackishBlue, .95);
   &__header {
     margin-bottom: 1.5rem;
   }
@@ -47,5 +48,32 @@
   &--is-veryDarkBlackishBlue {
     background-color: $veryDarkBlackishBlue;
     color: $white;
+  }
+}
+
+
+@media screen and(min-width:1280px) {
+  main{
+    .card{
+      margin-bottom: 0;
+      &__daniel{
+        grid-area: daniel;
+      }
+
+      &__jonathan{
+        grid-area: jonathan;
+      }
+
+      &__kira{
+        grid-area: kira;
+      }
+
+      &__patrick{
+        grid-area: patrick;
+      }
+      &__jeanette{
+        grid-area: jeanette;
+      }
+    }
   }
 }
